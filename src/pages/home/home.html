@@ -1,14 +1,16 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Text To Speech
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-label stacked>Text:</ion-label>
+    <ion-textarea rows="5" [(ngModel)]="text"></ion-textarea>
+  </ion-item>
+  <button clear ion-button (click)="sayText()">Speech</button>
+  <p>Created By Richard Gamora</p>
 </ion-content>
